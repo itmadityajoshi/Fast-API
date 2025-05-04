@@ -12,3 +12,8 @@ def index():
 @app.get("/about")
 def about():
     return{'Name':"This about API from FastAPI."}
+
+
+@app.get('/show'/{id})
+def show(id:int):
+    return {'data':{id}}
