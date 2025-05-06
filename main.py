@@ -17,3 +17,8 @@ def about():
 @app.get('/show'/{id})
 def show(id:int):
     return {'data':{id}}
+
+
+@app.get('/blog/{id}')
+def particular_blog(id:int):
+    return {'data':{'blog':id}}
