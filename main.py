@@ -22,8 +22,3 @@ def show(id:int):
 @app.get('/blog/{id}')
 def particular_blog(id:int):
     return {'data':{'blog':id}}
-
-
-@app.get('blog/comments/{id}')
-def particular_blog(id:int):
-    return {'data':{'blog':{'comment':{id}}}}
